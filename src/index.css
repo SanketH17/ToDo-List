@@ -1,0 +1,141 @@
+/* index.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center-div {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px; /* Set a maximum width for responsiveness */
+  width: 90%; /* Use a percentage width for responsiveness */
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%; /* Make the input width responsive */
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #3498db;
+  outline: none;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+/*TODO LIST */
+/* todo-list.css */
+
+/* todo-list.css */
+
+.todo_style {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.todo_style:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.todo_style i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #e74c3c;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.todo_style i:hover {
+  color: #c0392b;
+}
+
+.todo_style li {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+  .center-div {
+    width: 100%;
+    padding: 16px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+}
